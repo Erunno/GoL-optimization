@@ -10,7 +10,10 @@ __global__ void hello_kernel() {
 // Function to be called from main
 void cuda_hello() {
     // Launch a simple kernel
-    hello_kernel<<<1, 1>>>();
+    
+        
+        
+        hello_kernel<<<1, 1>>>();
     
     // Synchronize to ensure kernel completion
     cudaDeviceSynchronize();

@@ -1,0 +1,25 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[cuda]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    // Add file associations for CUDA files
+    "files.associations": {
+        "*.cu": "cuda",
+        "*.cuh": "cuda"
+    },
+    // Enable clang-format for all languages including CUDA
+    "clangd.fallbackFlags": ["-fallback-style=Google"],
+    "C_Cpp.clang_format_style": "file",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.formatting": "clangFormat",
+    // Enable format for CUDA files using C/C++ extension
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
+    "[cuda-cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    }
+}
